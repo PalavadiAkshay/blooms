@@ -1,31 +1,31 @@
 /* GET 'home' page */
 module.exports.homelist = function(req, res) {
     res.render('locations-list', {
-        title: 'Blooms - Find a place to work with wifi',
+        title: 'Blooms - Find self drive car rentals near you',
         pageHeader: {
             title: 'Blooms',
-            strapline: 'Find places to work with wifi near you!'
+            strapline: 'Find self drive car rentals near you!'
         },
-        sidebar: "Looking for wifi and a seat? Blooms helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.",
+        sidebar: "Plan your journeys with self-drive car rentals and enjoy the freedom of going anywhere anytime.",
         locations: [{
-            name: 'Cafe Niloufer',
+            name: 'Zoom car',
             address: '11-5-422/C/B, Lakdikapul',
             rating: 4,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['12 hours', '24 hours', '48 hours'],
             distance: '1.0 km from Birla Mandir',
             href: '/location'
         }, {
-            name: 'Beyond Coffee',
+            name: 'Longdrive cars',
             address: 'Plot 237, Road 36, Jubilee Hills',
             rating: 4,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['12 hours', '24 hours', '48 hours'],
             distance: '2.5 km from Golconda Fort',
             href: '/location/2'
         }, {
-            name: 'Roastery Coffee House',
+            name: 'IndusGo',
             address: 'House 418, 8/2/287/12, Road 14, Banjara Hills',
-            rating: 2,
-            facilities: ['Food', 'Premium wifi'],
+            rating: 3,
+            facilities: ['12 hours', '24 hours', '48 hours'],
             distance: '2.4 km from Golconda Fort',
             href: '/location/3'
         }]
@@ -35,19 +35,19 @@ module.exports.homelist = function(req, res) {
   /* GET 'Location info' page */
   module.exports.locationInfo = function(req, res) {
     res.render('location-info', {
-        title: 'Cafe Niloufer',
+        title: 'Zoom car',
         pageHeader: {
-            title: 'Cafe Niloufer'
+            title: 'Zoom car'
         },
         sidebar: {
             context: 'is on Blooms because it has accessible wifi and space to sit down with your laptop and get some work done.',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
-            name: 'Cafe Niloufer',
+            name: 'Zoom car',
             address: '11-5-422/C/B, Lakdikapul',
             rating: 4,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['12 hours', '24 hours', '48 hours'],
             coords: {
                 lat: 51.455041,
                 lng: -0.9690884
@@ -84,19 +84,19 @@ module.exports.homelist = function(req, res) {
     /* GET 'Location info' page */
     module.exports.locationInfo2 = function(req, res) {
         res.render('location-info2', {
-            title: 'Beyond Coffee',
+            title: 'Longdrive cars',
             pageHeader: {
-                title: 'Beyond Coffee'
+                title: 'Longdrive cars'
             },
             sidebar: {
                 context: 'is on Blooms because it has accessible wifi and space to sit down with your laptop and get some work done.',
                 callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
             },
             location: {
-                name: 'Beyond Coffee',
+                name: 'Longdrive cars',
                 address: '125 High Street, Reading, RG6 1PS',
                 rating: 3,
-                facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+                facilities: ['12 hours', '24 hours', '48 hours'],
                 coords: {
                     lat: 51.455041,
                     lng: -0.9690884
@@ -133,19 +133,19 @@ module.exports.homelist = function(req, res) {
         /* GET 'Location info' page */
   module.exports.locationInfo3 = function(req, res) {
     res.render('location-info3', {
-        title: 'Roastery Coffee House',
+        title: 'IndusGo',
         pageHeader: {
-            title: 'Roastery Coffee House'
+            title: 'IndusGo'
         },
         sidebar: {
             context: 'is on Blooms because it has accessible wifi and space to sit down with your laptop and get some work done.',
             callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
         },
         location: {
-            name: 'Roastery Coffee House',
+            name: 'IndusGo',
             address: '125 High Street, Reading, RG6 1PS',
             rating: 3,
-            facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+            facilities: ['12 hours', '24 hours', '48 hours'],
             coords: {
                 lat: 51.455041,
                 lng: -0.9690884
@@ -182,9 +182,9 @@ module.exports.homelist = function(req, res) {
   /* GET 'Add review' page */
   module.exports.addReview = function(req, res) {
     res.render('location-review-form', {
-        title: 'Review Cafe Niloufer on Blooms',
+        title: 'Review Zoom car on Blooms',
         pageHeader: {
-            title: 'Review Cafe Niloufer'
+            title: 'Review Zoom car'
         }
     });
   };
@@ -192,9 +192,9 @@ module.exports.homelist = function(req, res) {
   /* GET 'Add review' page */
   module.exports.addReview2 = function(req, res) {
     res.render('location-review-form2', {
-        title: 'Review Beyond Coffee on Blooms',
+        title: 'Review Longdrive cars on Blooms',
         pageHeader: {
-            title: 'Review Beyond Coffee'
+            title: 'Review Longdrive cars'
         }
     });
   };
@@ -202,9 +202,9 @@ module.exports.homelist = function(req, res) {
   /* GET 'Add review' page */
   module.exports.addReview3 = function(req, res) {
     res.render('location-review-form3', {
-        title: 'Review Roastery Coffee House Cafe on Blooms',
+        title: 'Review IndusGo on Blooms',
         pageHeader: {
-            title: 'Review Roastery Coffee House'
+            title: 'Review IndusGo'
         }
     });
   };
