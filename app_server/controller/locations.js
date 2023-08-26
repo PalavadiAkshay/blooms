@@ -75,7 +75,7 @@ module.exports.homelist = function(req, res) {
                 author: 'Charlie Chaplin',
                 rating: 3,
                 timestamp: '16 June 2013',
-                reviewText: 'It was okay. Coffee wasn\'t great, but the wifi was fast.'
+                reviewText: 'It was okay. cars wasn\'t great, but the wifi was fast.'
             }]
         }
     });
@@ -89,7 +89,7 @@ module.exports.homelist = function(req, res) {
                 title: 'Longdrive cars'
             },
             sidebar: {
-                context: 'is on Blooms because it has accessible wifi and space to sit down with your laptop and get some work done.',
+                context: 'is on Blooms because it has accessible cars at afforadable prices.',
                 callToAction: 'If you\'ve been and you like it - or if you don\'t - please leave a review to help other people just like you.'
             },
             location: {
@@ -124,7 +124,7 @@ module.exports.homelist = function(req, res) {
                     author: 'Charlie Chaplin',
                     rating: 3,
                     timestamp: '16 June 2013',
-                    reviewText: 'It was okay. Coffee wasn\'t great, but the wifi was fast.'
+                    reviewText: 'It was okay. cars wasn\'t great, but the wifi was fast.'
                 }]
             }
         });
@@ -173,7 +173,7 @@ module.exports.homelist = function(req, res) {
                 author: 'Charlie Chaplin',
                 rating: 3,
                 timestamp: '16 June 2013',
-                reviewText: 'It was okay. Coffee wasn\'t great, but the wifi was fast.'
+                reviewText: 'It was okay. cars wasn\'t great, but the wifi was fast.'
             }]
         }
     });
